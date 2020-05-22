@@ -1,8 +1,7 @@
 
 public class ArrayRotateDemo {
 	
-	static void leftRotate(int[] arr, int d, int n) {
-		
+	static void leftRotate(int[] arr, int d, int n) {		
 		d = d%n; // if d >= n
 		int i,j,k,temp, gcd;
 		
@@ -38,10 +37,9 @@ public class ArrayRotateDemo {
 
 	public static void main(String[] args) {
 		int arr[] = {1,2,3,4,5,6,7,8,9,10, 11, 12, 13};
-		int d = 3; // rotation club count
+		int d = 9; // rotation club count
 		
-		int n = arr.length;
-		
+		int n = arr.length;		
 		
 		leftRotate(arr, d, n);
 		printArr(arr);
